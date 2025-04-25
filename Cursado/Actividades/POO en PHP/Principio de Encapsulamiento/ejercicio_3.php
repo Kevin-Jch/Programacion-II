@@ -8,19 +8,20 @@ class Producto {
     public function getPrecio(){
     	echo"El precio es de $this->precio <br>";
     }
-    public function setPrecio(){
-    	if($this->precio >= 0){
-        echo "El precio es positivo <br>";
+    public function setPrecio($precioNuevo){
+    	if($precioNuevo >= 0){
+        $this-> precio = $precioNuevo;
+        echo "El precio nuevo es de: " . $this-> precio . "<br>";
         }else{
-        echo "El precio es negativo <br>";
+        echo "No se permiten valores negativos <br>";
         }
     }
 }
 $pro = new Producto(120);
 $pro-> getPrecio();
-$pro-> setPrecio();
+$pro-> setPrecio(500);
 
-$precio = new Producto(-20);
+$precio = new Producto(10);
 $precio-> getPrecio();
-$precio-> setPrecio();
+$precio-> setPrecio(-20);
 ?>
