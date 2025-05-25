@@ -1,9 +1,9 @@
 <?php
-namespace proveedores\herramietas;
+namespace proveedores\herramientas;
 
 class ayudante{
     public static function ayudar(){
-        return"estoy ayudando";
+        return"Estoy ayudando\n";
     }
 }
 ?>

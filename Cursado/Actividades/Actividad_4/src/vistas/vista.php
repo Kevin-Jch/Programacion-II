@@ -4,7 +4,7 @@ use contratos\renderable;
 
 class vista implements renderable{
     public function renderizar(){
-        return"Vista renderizada";
+        return "Vista renderizada\n";
     }
 }
 ?>
