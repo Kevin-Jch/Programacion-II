@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "a3eb461d-7f8a-42cc-9c05-c4e815300b69",
+		"name": "TP_7",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45364407",
+		"_collection_link": "https://kevinchipana.postman.co/workspace/Kevin-Chipana's-Workspace~3479ad62-7107-4573-8419-313dcd4a2b84/collection/45364407-a3eb461d-7f8a-42cc-9c05-c4e815300b69?action=share&source=collection_link&creator=45364407"
+	},
+	"item": [
+		{
+			"name": "Traer todas las personas",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Persona",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"nombre\": \"Gonzalo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://172.16.202.228/Actividad_7/public/Persona",
+					"protocol": "http",
+					"host": [
+						"172",
+						"16",
+						"202",
+						"228"
+					],
+					"path": [
+						"Actividad_7",
+						"public",
+						"Persona"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar persona",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Juan Perez\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://172.16.202.228/Actividad_7/public/Persona/1",
+					"protocol": "http",
+					"host": [
+						"172",
+						"16",
+						"202",
+						"228"
+					],
+					"path": [
+						"Actividad_7",
+						"public",
+						"Persona",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar persona",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://172.16.202.228/Actividad_7/public/Persona/2",
+					"protocol": "http",
+					"host": [
+						"172",
+						"16",
+						"202",
+						"228"
+					],
+					"path": [
+						"Actividad_7",
+						"public",
+						"Persona",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
