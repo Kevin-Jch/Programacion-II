@@ -1,11 +1,17 @@
 <?php
-$host = 'localhost';  
-$db   = 'Actividad_7';  
-$port = 3306;  
-$charset = 'utf8mb4';  
+require __DIR__ . '/../vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../..');
+$dotenv->load();
+
+$host = $_ENV['DB_HOST'];  
+$db   = $_ENV['DB_DB'];  
+$port = $_ENV['DB_PORT'];  
+$charset = $_ENV['DB_CHARSET'];  
+$usuario = $_ENV['DB_USER'];
+$password = $_ENV['DB_PASS'];
+
 $dsn = "mysql:host=$host;port=$port;dbname=$db;charset=$charset";
-$usuario = 'root';
-$password = 'kevin';
 
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,    // Excepciones en caso de error
@@ -15,7 +21,6 @@ $options = [
 
 try {
     $pdo = new PDO($dsn, $usuario, $password, $options);
-    //echo"Conexión exitosa \n";
 } catch (PDOException $e) {
     // Manejar error de conexión (log y mensaje genérico al usuario)
     error_log($e->getMessage());

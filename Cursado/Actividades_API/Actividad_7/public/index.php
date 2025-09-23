@@ -59,7 +59,7 @@ $app->post('/login', function (Request $request, Response $response) {
 $app->add(new JwtAuthentication([
     "secret" => "your_secret_key",
     "attribute" => "token",
-    "path" => "/Actividad_7/public/",
+    "path" => "/",
     "ignore" => ["/Actividad_7/public/login"],
     "algorithm" => ["HS256"],
     "secure" => false

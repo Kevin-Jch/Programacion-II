@@ -5,6 +5,7 @@
         "bryanjhv/slim-session": "^4.1",
         "tuupola/slim-jwt-auth": "^3.8",
         "firebase/php-jwt": "^5.5",
-        "nyholm/psr7": "^1.8"
+        "nyholm/psr7": "^1.8",
+        "vlucas/phpdotenv": "^5.6"
     }
 }
