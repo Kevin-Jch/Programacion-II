@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "bced9c47-0702-48bd-903f-f032796762c9",
+		"name": "flia.chipana",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45364407",
+		"_collection_link": "https://kevinchipana.postman.co/workspace/Kevin-Chipana's-Workspace~3479ad62-7107-4573-8419-313dcd4a2b84/collection/45364407-bced9c47-0702-48bd-903f-f032796762c9?action=share&source=collection_link&creator=45364407"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "Eliminar Cliente",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJleGFtcGxlLmNvbSIsImF1ZCI6ImV4YW1wbGUuY29tIiwiaWF0IjoxNzYyMjU3OTY1LCJuYmYiOjE3NjIyNTc5NjUsImV4cCI6MTc2MjM0NDM2NSwiZGF0YSI6eyJ1c2VybmFtZSI6IkxhdSIsInJvbGUiOiJhZG1pbiJ9fQ.xFYZUl2JBAlsbbWRJseTyQ-q9ptU1h-zt5_IPqwo-TM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/clientes/111",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"clientes",
+								"111"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar todos los clientes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJleGFtcGxlLmNvbSIsImF1ZCI6ImV4YW1wbGUuY29tIiwiaWF0IjoxNzYyMjU3MjMyLCJuYmYiOjE3NjIyNTcyMzIsImV4cCI6MTc2MjM0MzYzMiwiZGF0YSI6eyJ1c2VybmFtZSI6IkxhdSIsInJvbGUiOiJhZG1pbiJ9fQ.3wARvKjcmDPhTJ6hFN942obWwwmHEh-zbeY5CmNi-zE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/clientes",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Cliente",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJleGFtcGxlLmNvbSIsImF1ZCI6ImV4YW1wbGUuY29tIiwiaWF0IjoxNzYyMjU3OTY1LCJuYmYiOjE3NjIyNTc5NjUsImV4cCI6MTc2MjM0NDM2NSwiZGF0YSI6eyJ1c2VybmFtZSI6IkxhdSIsInJvbGUiOiJhZG1pbiJ9fQ.xFYZUl2JBAlsbbWRJseTyQ-q9ptU1h-zt5_IPqwo-TM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_cliente\" : 111,\r\n    \"nombre\" : \"Pilar\",\r\n    \"apellido\" : \"Mendoza\",\r\n    \"telefono\" : \"3411597531\",\r\n    \"direccion\" : \"El jacaranda\",\r\n    \"email\" : \"pilar@gmail.com\",\r\n    \"deuda\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/clientes",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar Cliente",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJleGFtcGxlLmNvbSIsImF1ZCI6ImV4YW1wbGUuY29tIiwiaWF0IjoxNzYyMjU3OTY1LCJuYmYiOjE3NjIyNTc5NjUsImV4cCI6MTc2MjM0NDM2NSwiZGF0YSI6eyJ1c2VybmFtZSI6IkxhdSIsInJvbGUiOiJhZG1pbiJ9fQ.xFYZUl2JBAlsbbWRJseTyQ-q9ptU1h-zt5_IPqwo-TM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\" : \"Pilar\",\r\n    \"apellido\" : \"Mendoza\",\r\n    \"telefono\" : \"3411597531\",\r\n    \"direccion\" : \"El jacaranda\",\r\n    \"email\" : \"pilar@gmail.com\",\r\n    \"deuda\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/clientes/111",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"clientes",
+								"111"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Productos",
+			"item": []
+		},
+		{
+			"name": "Proveedores",
+			"item": []
+		},
+		{
+			"name": "Consultas",
+			"item": [
+				{
+					"name": "Mostrar los Productos con sus Proveedores",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJleGFtcGxlLmNvbSIsImF1ZCI6ImV4YW1wbGUuY29tIiwiaWF0IjoxNzYyMjU3MjMyLCJuYmYiOjE3NjIyNTcyMzIsImV4cCI6MTc2MjM0MzYzMiwiZGF0YSI6eyJ1c2VybmFtZSI6IkxhdSIsInJvbGUiOiJhZG1pbiJ9fQ.3wARvKjcmDPhTJ6hFN942obWwwmHEh-zbeY5CmNi-zE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/productosproveedores",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"productosproveedores"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
