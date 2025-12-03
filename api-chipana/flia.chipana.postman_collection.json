@@ -4,7 +4,7 @@
 		"name": "flia.chipana",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "45364407",
-		"_collection_link": "https://kevinchipana.postman.co/workspace/Kevin-Chipana's-Workspace~3479ad62-7107-4573-8419-313dcd4a2b84/collection/45364407-bced9c47-0702-48bd-903f-f032796762c9?action=share&source=collection_link&creator=45364407"
+		"_collection_link": "https://kevinchipana.postman.co/workspace/3479ad62-7107-4573-8419-313dcd4a2b84/collection/45364407-bced9c47-0702-48bd-903f-f032796762c9?action=share&source=collection_link&creator=45364407"
 	},
 	"item": [
 		{
@@ -18,7 +18,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJleGFtcGxlLmNvbSIsImF1ZCI6ImV4YW1wbGUuY29tIiwiaWF0IjoxNzYyMjU3OTY1LCJuYmYiOjE3NjIyNTc5NjUsImV4cCI6MTc2MjM0NDM2NSwiZGF0YSI6eyJ1c2VybmFtZSI6IkxhdSIsInJvbGUiOiJhZG1pbiJ9fQ.xFYZUl2JBAlsbbWRJseTyQ-q9ptU1h-zt5_IPqwo-TM",
+									"value": "{{token}}",
 									"type": "string"
 								}
 							]
@@ -26,7 +26,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://192.168.100.88/api-chipana/public/clientes/111",
+							"raw": "http://192.168.100.88/api-chipana/public/clientes/3",
 							"protocol": "http",
 							"host": [
 								"192",
@@ -38,7 +38,7 @@
 								"api-chipana",
 								"public",
 								"clientes",
-								"111"
+								"3"
 							]
 						}
 					},
@@ -46,13 +46,37 @@
 				},
 				{
 					"name": "Mostrar todos los clientes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
 					"request": {
 						"auth": {
 							"type": "bearer",
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJleGFtcGxlLmNvbSIsImF1ZCI6ImV4YW1wbGUuY29tIiwiaWF0IjoxNzYyMjU3MjMyLCJuYmYiOjE3NjIyNTcyMzIsImV4cCI6MTc2MjM0MzYzMiwiZGF0YSI6eyJ1c2VybmFtZSI6IkxhdSIsInJvbGUiOiJhZG1pbiJ9fQ.3wARvKjcmDPhTJ6hFN942obWwwmHEh-zbeY5CmNi-zE",
+									"value": "{{token}}",
 									"type": "string"
 								}
 							]
@@ -85,7 +109,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJleGFtcGxlLmNvbSIsImF1ZCI6ImV4YW1wbGUuY29tIiwiaWF0IjoxNzYyMjU3OTY1LCJuYmYiOjE3NjIyNTc5NjUsImV4cCI6MTc2MjM0NDM2NSwiZGF0YSI6eyJ1c2VybmFtZSI6IkxhdSIsInJvbGUiOiJhZG1pbiJ9fQ.xFYZUl2JBAlsbbWRJseTyQ-q9ptU1h-zt5_IPqwo-TM",
+									"value": "{{token}}",
 									"type": "string"
 								}
 							]
@@ -94,7 +118,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id_cliente\" : 111,\r\n    \"nombre\" : \"Pilar\",\r\n    \"apellido\" : \"Mendoza\",\r\n    \"telefono\" : \"3411597531\",\r\n    \"direccion\" : \"El jacaranda\",\r\n    \"email\" : \"pilar@gmail.com\",\r\n    \"deuda\" : 0\r\n}",
+							"raw": "{\r\n    \"id_cliente\" : 3,\r\n    \"nombre\" : \"Pilar\",\r\n    \"apellido\" : \"Mendoza\",\r\n    \"telefono\" : \"3411597531\",\r\n    \"direccion\" : \"El jacaranda\",\r\n    \"email\" : \"pilar@gmail.com\",\r\n    \"deuda\" : 0\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -127,7 +151,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJleGFtcGxlLmNvbSIsImF1ZCI6ImV4YW1wbGUuY29tIiwiaWF0IjoxNzYyMjU3OTY1LCJuYmYiOjE3NjIyNTc5NjUsImV4cCI6MTc2MjM0NDM2NSwiZGF0YSI6eyJ1c2VybmFtZSI6IkxhdSIsInJvbGUiOiJhZG1pbiJ9fQ.xFYZUl2JBAlsbbWRJseTyQ-q9ptU1h-zt5_IPqwo-TM",
+									"value": "{{token}}",
 									"type": "string"
 								}
 							]
@@ -136,7 +160,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\" : \"Pilar\",\r\n    \"apellido\" : \"Mendoza\",\r\n    \"telefono\" : \"3411597531\",\r\n    \"direccion\" : \"El jacaranda\",\r\n    \"email\" : \"pilar@gmail.com\",\r\n    \"deuda\" : 0\r\n}",
+							"raw": "{\r\n    \"nombre\" : \"Pilar\",\r\n    \"apellido\" : \"Mendoza\",\r\n    \"telefono\" : \"3411597531\",\r\n    \"direccion\" : \"El jacaranda\",\r\n    \"email\" : \"pilar@gmail.com\",\r\n    \"deuda\" : 1111\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -144,7 +168,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://192.168.100.88/api-chipana/public/clientes/111",
+							"raw": "http://192.168.100.88/api-chipana/public/clientes/3",
 							"protocol": "http",
 							"host": [
 								"192",
@@ -156,7 +180,347 @@
 								"api-chipana",
 								"public",
 								"clientes",
-								"111"
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Formas de pago",
+			"item": [
+				{
+					"name": "Eliminar Forma de pago",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/formaspago/2",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"formaspago",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar todas las Formas de pago",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/formaspago",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"formaspago"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Forma de pago",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_forma_pago\": \"2\",\r\n    \"descripcion\": \"Efectivo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/formaspago",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"formaspago"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar Forma de pago",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descripcion\": \"Debito\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/formaspago/2",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"formaspago",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Detalle de Forma de Pago",
+			"item": [
+				{
+					"name": "Eliminar Detalle de Forma de Pago",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/detalleformapago/1/1",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"detalleformapago",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar todos los detalle de Forma de Pago",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/detalleformapago",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"detalleformapago"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Detalle de Forma de Pago",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_venta\": \"1\",\r\n    \"id_forma_pago\": \"1\",\r\n    \"importe\": \"4500.00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/detalleformapago",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"detalleformapago"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar Detalle de Forma de Pago",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"importe\": 1111\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/detalleformapago/1/1",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"detalleformapago",
+								"1",
+								"1"
 							]
 						}
 					},
@@ -166,24 +530,648 @@
 		},
 		{
 			"name": "Productos",
-			"item": []
-		},
-		{
-			"name": "Proveedores",
-			"item": []
-		},
-		{
-			"name": "Consultas",
 			"item": [
 				{
-					"name": "Mostrar los Productos con sus Proveedores",
+					"name": "Eliminar Producto",
 					"request": {
 						"auth": {
 							"type": "bearer",
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJleGFtcGxlLmNvbSIsImF1ZCI6ImV4YW1wbGUuY29tIiwiaWF0IjoxNzYyMjU3MjMyLCJuYmYiOjE3NjIyNTcyMzIsImV4cCI6MTc2MjM0MzYzMiwiZGF0YSI6eyJ1c2VybmFtZSI6IkxhdSIsInJvbGUiOiJhZG1pbiJ9fQ.3wARvKjcmDPhTJ6hFN942obWwwmHEh-zbeY5CmNi-zE",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/productos/6",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"productos",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar todos los Productos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/productos",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Producto",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_producto\": \"6\",\r\n    \"descripcion\": \"PRUEBA PRODUCTO\",\r\n    \"stock\": \"11.00\",\r\n    \"id_proveedor\": \"1\",\r\n    \"precio\": \"40000.00\",\r\n    \"costo\": \"3500.00\",\r\n    \"fecha_cad\": \"2011-11-11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/productos",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar Producto",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"descripcion\": \"PRUEBA Producto\",\r\n        \"stock\": \"11.00\",\r\n        \"id_proveedor\": \"1\",\r\n        \"precio\": \"1500.00\",\r\n        \"costo\": \"3500.00\",\r\n        \"fecha_cad\": \"2011-11-11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/productos/6",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"productos",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Proveedores",
+			"item": [
+				{
+					"name": "Eliminar Proveedor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/proveedores/12",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"proveedores",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar todos los Proveedores",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/proveedores",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"proveedores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Proveedor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Pilar M\",\r\n    \"telefono\": \"341222222222\",\r\n    \"email\": \"MendozaP@gmail.com\",\r\n    \"direccion\": \"El jacaranda\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/proveedores",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"proveedores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar Proveedor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Pilar Mendoza\",\r\n    \"telefono\": \"341222222222\",\r\n    \"email\": \"MendozaP@gmail.com\",\r\n    \"direccion\": \"El jacaranda\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/proveedores/12",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"proveedores",
+								"12"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ventas",
+			"item": [
+				{
+					"name": "Eliminar Venta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/ventas/4",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"ventas",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar todas las ventas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/ventas",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"ventas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Venta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_usuario\": \"1\",\r\n    \"fecha\": \"2011-11-11 11:11:11.000\",\r\n    \"id_cliente\": \"1\",\r\n    \"total\": \"500\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/ventas",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"ventas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar Venta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJleGFtcGxlLmNvbSIsImF1ZCI6ImV4YW1wbGUuY29tIiwiaWF0IjoxNzY0MzU1NTM0LCJuYmYiOjE3NjQzNTU1MzQsImV4cCI6MTc2NDQ0MTkzNCwiZGF0YSI6eyJ1c2VybmFtZSI6IkxhdSIsInJvbGUiOiJhZG1pbiJ9fQ.znRE6NtkMaZax4jMOpsLJ8SPXh4UuC50TR9AmD0ZA-Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_usuario\": \"1\",\r\n    \"fecha\": \"2011-11-11 11:11:11.000\",\r\n    \"id_cliente\": \"1\",\r\n    \"total\": \"11111111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/ventas/4",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"ventas",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Detalle de Venta",
+			"item": [
+				{
+					"name": "Eliminar Detalle de Venta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/detalleVenta/5/3/4",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"detalleVenta",
+								"5",
+								"3",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar todos los detalle de venta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/detalleVenta",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"detalleVenta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Detalle de Venta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id_venta\": 3,\r\n        \"id_producto\": 4,\r\n        \"precio_total\": \"1111\",\r\n        \"cantidad\": \"111\",\r\n        \"precio\": \"11111\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/detalleVenta",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"detalleVenta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar Detalle de Venta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"precio_total\": \"2222\",\r\n        \"cantidad\": \"111\",\r\n        \"precio\": \"11111\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/detalleVenta/5/3/4",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"detalleVenta",
+								"5",
+								"3",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Consultas",
+			"item": [
+				{
+					"name": "Productos con Proveedores",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
 									"type": "string"
 								}
 							]
@@ -207,8 +1195,342 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Productos más vendidos en rango de fechas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/productosmasvendidos/20-05-2024/04-11-2025",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"productosmasvendidos",
+								"20-05-2024",
+								"04-11-2025"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ventas por rango de Fechas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/ventaporfecha/20-05-2024/04-12-2026",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"ventaporfecha",
+								"20-05-2024",
+								"04-12-2026"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Productos por Fecha de vencimiento",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/productofechacaducidad/20-05-1980/04-11-2026",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"productofechacaducidad",
+								"20-05-1980",
+								"04-11-2026"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Productos de un Proveedor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/productoproveedor/1",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"productoproveedor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ventas por forma de pago",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/ventaformapago/1",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"ventaformapago",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ingresos totales por Forma de pago",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/ingresosformapago/1",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"ingresosformapago",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ingresos por Fecha",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.100.88/api-chipana/public/ingresosfecha/10-11-2000/10-10-2026",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"100",
+								"88"
+							],
+							"path": [
+								"api-chipana",
+								"public",
+								"ingresosfecha",
+								"10-11-2000",
+								"10-10-2026"
+							]
+						}
+					},
+					"response": []
 				}
 			]
+		},
+		{
+			"name": "Generar Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"try {\r",
+							"    let data = pm.response.json();\r",
+							"    pm.environment.set(\"token\", data.token); // o data.access_token si tu API lo llama así\r",
+							"    console.log(\"Token guardado:\", data.token);\r",
+							"} catch (e) {\r",
+							"    console.log(\"No se pudo guardar el token:\", e);\r",
+							"}"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "Administrador",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.100.88/api-chipana/public/login",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"100",
+						"88"
+					],
+					"path": [
+						"api-chipana",
+						"public",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
 		}
 	]
 }
